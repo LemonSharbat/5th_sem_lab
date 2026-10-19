@@ -8,14 +8,14 @@
     <h2>Employee Information Form</h2>
 
     <form action="EmployeeResult.jsp" method="post">
-        Employee ID: <input type="text" name="employeeId" required><br><br>
+        Employee ID: <input type="text" name="employeeId"><br><br>
 
-        Name: <input type="text" name="name" required><br><br>
+        Name: <input type="text" name="name"><br><br>
 
-        Age: <input type="number" name="age" required><br><br>
+        Age: <input type="number" name="age"><br><br>
 
         Department:
-        <select name="department" required>
+        <select name="department">
             <option value="">Select</option>
             <option value="HR">HR</option>
             <option value="Finance">Finance</option>
@@ -23,7 +23,7 @@
             <option value="Sales">Sales</option>
         </select><br><br>
 
-        Email: <input type="email" name="email" required><br><br>
+        Email: <input type="email" name="email"><br><br>
 
         <input type="submit" value="Submit">
     </form>
