@@ -1,8 +1,14 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Employee Form</title>
+    <style>
+    	form {
+        	display: grid;
+       		grid-template-columns: 120px 250px;
+        	gap: 15px 10px;
+    	}
+	</style>
 </head>
 <body>
     <h2>Employee Information Form</h2>

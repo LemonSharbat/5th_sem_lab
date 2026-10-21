@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,14 +7,15 @@
 <body>
     <h2>Employee Information Form</h2>
 
-    <form action="EmployeeResult.jsp" method="post">
-        Employee ID: <input type="text" name="employeeId" required><br><br>
-        Name: <input type="text" name="name" required><br><br>
-        Age: <input type="number" name="age" required><br><br>
-        Department: <input type="text" name="department" required><br><br>
-        Email: <input type="email" name="email" required><br><br>
-
-        <input type="submit" value="Submit">
+    <form>
+        <table>
+            <tr><td>Employee ID</td><td><input name="id" required></td></tr>
+            <tr><td>Name</td><td><input name="name" required></td></tr>
+            <tr><td>Age</td><td><input type="number" name="age" required></td></tr>
+            <tr><td>Department</td><td><input name="department" required></td></tr>
+            <tr><td>Email</td><td><input type="email" name="email" required></td></tr>
+            <tr><td></td><td><button>Submit</button></td></tr>
+        </table>
     </form>
 </body>
 </html>
