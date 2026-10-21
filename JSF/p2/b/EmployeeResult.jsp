@@ -97,11 +97,27 @@
 
         <h3>Validation Errors</h3>
 
-        <p>Employee ID: <%= employeeIdError %></p>
-        <p>Name: <%= nameError %></p>
-        <p>Age: <%= ageError %></p>
-        <p>Department: <%= departmentError %></p>
-        <p>Email: <%= emailError %></p>
+        <ul>
+            <% if (!employeeIdError.isEmpty()) { %>
+                <li><b>Employee ID:</b> <%= employeeIdError %></li>
+            <% } %>
+
+            <% if (!nameError.isEmpty()) { %>
+                <li><b>Name:</b> <%= nameError %></li>
+            <% } %>
+
+            <% if (!ageError.isEmpty()) { %>
+                <li><b>Age:</b> <%= ageError %></li>
+            <% } %>
+
+            <% if (!departmentError.isEmpty()) { %>
+                <li><b>Department:</b> <%= departmentError %></li>
+            <% } %>
+
+            <% if (!emailError.isEmpty()) { %>
+                <li><b>Email:</b> <%= emailError %></li>
+            <% } %>
+        </ul>
 
         <a href="EmployeeForm.jsp">Go back to the form</a>
 
