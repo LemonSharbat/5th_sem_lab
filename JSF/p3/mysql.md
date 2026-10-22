@@ -32,7 +32,7 @@ SHOW TABLES;
 ```
 
 ```sql
-CREATE TABLE student (
+CREATE TABLE students (
   roll_no INT PRIMARY KEY,
   name VARCHAR(150),
   email VARCHAR(150),

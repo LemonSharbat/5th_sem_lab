@@ -16,7 +16,7 @@ public class StudentDAO {
     public void addStudent(Student student) throws SQLException {
 
         String query =
-                "INSERT INTO student (roll_no, name, email, age) " +
+                "INSERT INTO students (roll_no, name, email, age) " +
                 "VALUES (?, ?, ?, ?)";
 
         try (Connection con = DBUtil.getConnection();
@@ -36,7 +36,7 @@ public class StudentDAO {
 
         List<Student> students = new ArrayList<>();
 
-        String query = "SELECT * FROM student ORDER BY roll_no";
+        String query = "SELECT * FROM students ORDER BY roll_no";
 
         try (Connection con = DBUtil.getConnection();
              PreparedStatement ps = con.prepareStatement(query);
@@ -62,7 +62,7 @@ public class StudentDAO {
     public void updateStudent(Student student) throws SQLException {
 
         String query =
-                "UPDATE student SET name = ?, email = ?, age = ? " +
+                "UPDATE students SET name = ?, email = ?, age = ? " +
                 "WHERE roll_no = ?";
 
         try (Connection con = DBUtil.getConnection();
@@ -80,7 +80,7 @@ public class StudentDAO {
     // DELETE: Remove a student
     public void deleteStudent(int rollNo) throws SQLException {
 
-        String query = "DELETE FROM student WHERE roll_no = ?";
+        String query = "DELETE FROM students WHERE roll_no = ?";
 
         try (Connection con = DBUtil.getConnection();
              PreparedStatement ps = con.prepareStatement(query)) {
