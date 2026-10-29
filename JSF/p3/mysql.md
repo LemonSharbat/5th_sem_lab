@@ -54,4 +54,8 @@ SELECT DATABASE();
 To check on which port MySQL is running on
 ```sql
 SELECT @@PORT;
+
+or
+
+SHOW VARIABLES LIKE 'port';
 ```

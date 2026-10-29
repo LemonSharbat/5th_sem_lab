@@ -12,8 +12,6 @@
 
     <h1>Student Management System</h1>
 
-    <p>Welcome to the Student Management Application.</p>
-
     <a href="list-student.jsp">View Students</a>
     <br><br>
 
