@@ -1,3 +1,5 @@
 # Ignore the executable named main in subdirectories
 **/main
 !**/main/
+
+cnc/practice

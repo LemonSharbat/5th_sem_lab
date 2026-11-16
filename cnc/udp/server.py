@@ -1,6 +1,5 @@
 import socket
 
-
 SERVER_ADDRESS = ("localhost", 8888)
 BUFFER_SIZE = 1024
 
